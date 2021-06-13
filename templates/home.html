@@ -1,0 +1,19 @@
+<head>
+<style>
+input {
+  width:50%;
+} 
+
+</style>
+</head>
+
+<form method="POST">
+    <input type="text" name="pid" placeholder="Enter Amazpon product id(s) eg. B08BB9RWXD,B08SJTX6PN">
+    <button type="submit" name="submit-btn" value="fetch">FETCH</button>
+    <button type="submit" name="submit-btn" value="fetchAll">FETCH ALL</button>
+    <button type="submit" name="submit-btn" value="downloadCSV">DOWNLOAD CSV</button>
+</form>
+{% for table in tables %}
+{{titles[loop.index]}}
+{{ table|safe }}
+{% endfor %}
