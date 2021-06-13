@@ -4,7 +4,6 @@ idna==3.1
 itsdangerous==1.1.0
 Jinja2==2.11.2
 requests==2.24.0
-pdfkit==0.6.1
 pandas==1.2.4
 beautifulsoup4==4.9.3
-pymongo==3.11.4
+pymongo[tls,srv]==3.11.4
